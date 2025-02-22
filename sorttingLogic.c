@@ -119,10 +119,10 @@ void bubbleSort(int *p, int size) {
 }
 
 void selectionSort(int *p, int size) {
-
+// 인덱스 번호 크기를 먼저 비교 후 나중에 값을 변경
   for (int i = 0; i < size - 1; i++) {
     int minIdx = i;
-    for (int j = i + 1; j < size; j++) {
+    for (int j = i + 1; j < size;) {
       if (p[j] < p[minIdx]) {
         minIdx = j;
       }
@@ -134,7 +134,7 @@ void selectionSort(int *p, int size) {
 }
 
 void insertSort(int *p, int size) {
-
+// arr[0]이 될 때까지 계속 비교
   for (int i = 1; i < size; i++) {
     int key = p[i];
     int j = i - 1;
