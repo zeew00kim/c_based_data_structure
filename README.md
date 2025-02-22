@@ -1,5 +1,5 @@
 <span style="color: violet">25년 1학기 자료구조 수업에 대한<br>
-코드 로직을 이곳에 정리할 예정입니다.</span.
+코드 로직을 이곳에 정리할 예정입니다.</span>
 
 ### sorttingLogic.c
 
