@@ -18,3 +18,7 @@
 - `strcpy`를 통해 `name`의 문자열 내용을 `imitation` 문자열에 복사
 - `conpareString()` 함수의 `strcmp` 기능을 사용해 문자열을 사전적 우선순위로 정렬
 - `printString()` 정렬된 2d 문자열의 내용을 출력하는 함수
+---
+## funcPointer.c
+- `func(int (*fp)(int, int))` 함수 포인터로 원하는 함수를 호출
+- `do ~ while`문을 사용하여 사용자가 원하는 만큼 반복
