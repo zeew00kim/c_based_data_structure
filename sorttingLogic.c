@@ -122,7 +122,7 @@ void selectionSort(int *p, int size) {
 // 인덱스 번호 크기를 먼저 비교 후 나중에 값을 변경
   for (int i = 0; i < size - 1; i++) {
     int minIdx = i;
-    for (int j = i + 1; j < size;) {
+    for (int j = i + 1; j < size; j++) {
       if (p[j] < p[minIdx]) {
         minIdx = j;
       }
@@ -165,7 +165,7 @@ void quickSort(int *p, int left, int right) {
       checkRight--;
     }
     if (checkLeft <= checkRight) {
-      int temp = p[checkLeft];
+      temp = p[checkLeft];
       p[checkLeft] = p[checkRight];
       p[checkRight] = temp;
       checkLeft++;
