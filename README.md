@@ -22,3 +22,12 @@
 ## funcPointer.c
 - `func(int (*fp)(int, int))` 함수 포인터로 원하는 함수를 호출
 - `do ~ while`문을 사용하여 사용자가 원하는 만큼 반복
+
+## getPrimeNumber.c
+- `prime number(소수)` = 1과 자기 자신으로만 나누어 떨어지는 숫자
+- `clock_t = start, end` 값을 사용해 프로세스를 실행하는 데에 소요된 시간을 계산
+- `getPrimeNumber()` 2 ~ 10000 사이의 소수 값들을 구하는 함수
+- 소수의 개수와 최종 소요 시간을 출력
+
+## findMax.c
+- `rand()` 난수로 채워진 배열 중 `max` 값을 찾아 출력
