@@ -1,7 +1,7 @@
 **25년 1학기 자료구조 수업에 대한<br>
 코드 로직을 이곳에 정리할 예정입니다.**
 <br>
-<strong><a href="https://velog.io/@zeew00/series/C%EC%96%B8%EC%96%B4">코드 풀이</a></strong>
+<strong><a href="https://velog.io/@zeew00/series/C%EC%96%B8%EC%96%B4">코드 정리 내용 참고 블로그</a></strong>
 
 ---
 ## sorttingLogic.c
