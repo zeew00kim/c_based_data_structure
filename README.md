@@ -53,4 +53,10 @@
 기능의 로직이 추가된 코드입니다.
 
 ---
-## sparsePoly.c (2주차 수요일)
+## sparseMatrix.c (3주차 월요일)
+- 행/열과 하나의 행렬 요소 값을 가진 `struct Element` 구조체 선언
+- `main()` 함수에서 구조체 배열 `Element structArr[5]` 선언
+- `srand(time(NULL))` 함수를 통해 행/열/요소 값을 랜덤으로 생성
+- `printArr()` 함수를 통해 희소행렬 및 전치행렬 결과 값을 출력
+- `transportARR()` 구조체 배열을 순회하며 행과 열 값을 교환
+---
