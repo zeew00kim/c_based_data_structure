@@ -1,7 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// 스택 기능 구현을 위해 만든 헤더 파일
 Element data[MAX_SIZE];
 int top;
 
-void error(char *str) {
+void error(char* str) {
     puts(str);
     exit(-1);
 }
@@ -24,9 +29,8 @@ int is_full() {
 }
 
 void push(Element e) {
-
     if (is_full()) {
-        error("Overflow Error!");
+        error("overflow error!");
     }
     else {
         data[++top] = e;
@@ -35,14 +39,14 @@ void push(Element e) {
 
 Element pop() {
     if (is_empty()) {
-        error("Underflow Error!");
+        error("underflow error!");
     }
-    return data[top--]; // 비어있지 않다면 값을 출력하고 top--
+    return data[top--];
 }
 
 Element peek() {
     if (is_empty()) {
-        error("Underflow Error!");
+        error("underflow error!");
     }
-    return data[top]; // 현재 top 위치 값 출력 (삭제 안함)
+    return data[top];
 }

@@ -4,8 +4,9 @@
 #include <time.h>
 #define MAX_SIZE 100
 
-typedef int Element; // int 자료형에 별칭 부여
-#include "array_stack.h"
+// 2장 스택 : 스택을 활용한 배열 입력값 뒤집어 출력하기
+typedef int Element;
+#include "array_stack.h";
 
 void selectionSort(int *arr, int size);
 
@@ -28,11 +29,9 @@ int main() {
 
     init_stack();
 
-    puts("[ stack test ]");
     printf("input data : ");
-
     for (int i = 0; i < num; i++) {
-        printf(" %d", *(arr + i));
+        printf("%d ", arr[i]);
         push(arr[i]);
     }
 
@@ -40,18 +39,18 @@ int main() {
 
     printf("output data : ");
 
-    while(!is_empty()) {
-        printf(" %d", pop());
+    while (!is_empty()) {
+        printf("%d ", pop());
     }
 
     puts("");
 
-    return 0;
+    free(arr);
 }
 
 void selectionSort(int *arr, int size) {
 
-    for (int i = 0; i < size -1; i++) {
+    for (int i = 0; i < size - 1; i++) {
         int minIdx = i;
         for (int j = i + 1; j < size; j++) {
             if (arr[j] < arr[minIdx]) {
