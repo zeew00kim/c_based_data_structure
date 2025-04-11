@@ -3,6 +3,7 @@ typedef char Element;
 
 #include "array_stack.h"
 
+// 자료구조 3장 : 스택을 이용한 문자열 뒤집기
 int main() {
 
     char *str = (char*)malloc(sizeof(char) * 200);
