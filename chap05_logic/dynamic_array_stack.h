@@ -7,7 +7,7 @@ int top;
 
 int MAX_SIZE = 10;
 
-void error(char *str) {
+void error(char* str) {
     puts(str);
     exit(-1);
 }
@@ -31,7 +31,7 @@ void push(Element e) {
         data = (Element*)realloc(data, sizeof(Element) * MAX_SIZE);
         printf("[ realloc complete (%d byte) ]\n", MAX_SIZE);
     }
-    data[++top]= e;
+    data[++top] = e;
 }
 
 Element pop() {
