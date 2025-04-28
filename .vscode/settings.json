@@ -3,6 +3,7 @@
         "array": "cpp",
         "initializer_list": "cpp",
         "utility": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "circ_queue.h": "c"
     }
 }

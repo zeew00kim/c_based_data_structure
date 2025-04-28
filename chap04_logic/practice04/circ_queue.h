@@ -3,26 +3,26 @@
 #include <string.h>
 
 #define MAX_SIZE 100
-#define Element int
+#define Element char
 Element data[MAX_SIZE];
 
 int front, rear, size;
 
-void error(char *str) {
+void error(char* str) {
     puts(str);
     exit(-1);
 }
 
 void init_queue() {
-    front = rear = 0;
+    front = rear = size = 0;
 }
 
 int is_empty() {
-    return (front == rear) ? 1 : 0;
+    return (size == 0) ? 1 : 0;
 }
 
 int is_full() {
-    return (front == (rear + 1) % MAX_SIZE) ? 1 : 0;
+    return (size == MAX_SIZE) ? 1 : 0;
 }
 
 void enqueue(Element e) {
@@ -30,6 +30,7 @@ void enqueue(Element e) {
         error("[ overflow error ]");
     }
     rear = (rear + 1) % MAX_SIZE;
+    size++;
     data[rear] = e;
 }
 
@@ -38,6 +39,7 @@ Element dequeue() {
         error("[ underflow error ]");
     }
     front = (front + 1) % MAX_SIZE;
+    size--;
     return data[front];
 }
 

@@ -11,24 +11,24 @@ typedef struct {
     int top;
 } Stack;
 
-void error(char *str) {
+void error(char* str) {
     puts(str);
 }
 
-void init_stack(Stack *s, int *n) {
+void init_stack(Stack* s, int* n) {
     s->top = -1;
     printf("[ no.%d stack initialization complete ]\n", (*n)++);
 }
 
-int is_empty(Stack *s) {
+int is_empty(Stack* s) {
     return (s->top == -1) ? 1 : 0;
 }
 
-int is_full(Stack *s) {
+int is_full(Stack* s) {
     return (s->top == MAX_SIZE - 1) ? 1 : 0;
 }
 
-void push(Stack *s, Element2 e) {
+void push(Stack* s, Element2 e) {
     if (is_full(s)) {
         error("[ stack overflow error ]");
     }
@@ -37,7 +37,7 @@ void push(Stack *s, Element2 e) {
     }
 }
 
-Element2 pop(Stack *s) {
+Element2 pop(Stack* s) {
     if (is_empty(s)) {
         error("[ stack underflow error ]");
         exit(-1);
@@ -47,7 +47,7 @@ Element2 pop(Stack *s) {
     }
 }
 
-Element2 peek(Stack *s) {
+Element2 peek(Stack* s) {
     if (is_empty(s)) {
         error("[ stack underflow error ]");
         exit(-1);

@@ -6,7 +6,7 @@ Element data[MAX_SIZE];
 
 int top;
 
-void error(char *str) {
+void error(char* str) {
     puts(str);
     exit(-1);
 }
