@@ -4,6 +4,7 @@
         "initializer_list": "cpp",
         "utility": "cpp",
         "xutility": "cpp",
-        "circ_queue.h": "c"
+        "circ_queue.h": "c",
+        "circular_queue.h": "c"
     }
 }
